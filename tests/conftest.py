@@ -6,7 +6,7 @@ from fastapi.testclient import TestClient
 
 from app.database import Base, get_db
 from app.main import app
-from app.auth import Base, get_admin, get_usuario_logado, get_usuario_opcional
+from app.auth import get_admin, get_usuario_logado, get_usuario_opcional
 
 @pytest.fixture()
 def db_session_test():
